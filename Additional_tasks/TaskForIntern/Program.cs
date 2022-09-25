@@ -73,3 +73,51 @@
 // else if(day == "6") Console.WriteLine("Суббота!");
 // else if(day == "7") Console.WriteLine("Воскресенье!");
 // else Console.WriteLine("Такого дня недели не существует!");
+
+
+// 4. Найти максимальное из трех чисел
+
+// Console.WriteLine("Введите первое число: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите второе число: ");
+// int b = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите третие число: ");
+// int c = Convert.ToInt32(Console.ReadLine());
+
+// int max = a;
+// if(b > max) max = b;
+// else if(c > max) max = c;
+// Console.WriteLine($"{a}, {b}, {c} -> Максимальное: {max}");
+
+
+//  5. Написать программу вычисления значения функции y = f(a)
+
+// Console.WriteLine("Введите a: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// int y = 0;
+// if(a > 0) y = 2 * a - 10;
+// else if(a == 0) y = 0;
+// else y = 2 * Math.Abs(a) - 1;
+// Console.WriteLine($"{y} = f({a})");
+
+//  6. Выяснить является ли число чётным
+
+// Console.WriteLine("Введите число: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+
+// if(n % 2 == 0) Console.WriteLine($"Число {n} является чётным!");
+// else Console.WriteLine($"Число {n} НЕ является чётным!");
+
+
+
+// 7. Показать числа от -N до N
+
+// Console.WriteLine("Введите число: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+
+// int count = -n;
+// while(count <= n) 
+// {
+// Console.Write($"|{count}| ");
+// count++;
+// }
