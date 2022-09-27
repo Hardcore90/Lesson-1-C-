@@ -121,3 +121,126 @@
 // Console.Write($"|{count}| ");
 // count++;
 // }
+
+
+
+// 8. Показать четные числа от 1 до N
+
+// Console.WriteLine("Введите число: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+
+// int count = 1;
+// while(count <= n)
+// {
+//     if(count % 2 == 0)
+//     Console.Write($"{count} ");
+//     count++;
+// }
+
+
+
+// 9. Показать последнюю цифру трёхзначного числа
+
+// Console.WriteLine("Введите трехзначное число: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+
+// void ThirdDigit(int num)
+// {
+//     int res = 0;
+//     if(num / 1000 == 0 && num / 100 > 0)
+//     {
+//         res = num % 10;
+//         Console.WriteLine($"Последняя цифра трехзначного числа {num} -> {res}!");
+//     }
+//     else Console.WriteLine($"Число {num} НЕ является трехзначным числом!");
+// }
+
+// ThirdDigit(n);
+
+
+
+// 10. Показать вторую цифру трёхзначного числа
+
+// Console.WriteLine("Введите трехзначное число: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+
+// void SecondDigit(int num)
+// {
+//     int res = 0;
+//     if(num / 1000 == 0 && num / 100 > 0)
+//     {
+//         res = num / 10 % 10;
+//         Console.WriteLine($"Вторая цифра трехзначного числа {num} -> {res}!");
+//     }
+//     else Console.WriteLine($"Число {num} НЕ является трехзначным числом!");
+// }
+
+// SecondDigit(n);
+
+
+// 11. Дано число из отрезка [10, 99]. Показать наибольшую цифру числа
+
+// int number = new Random().Next(10, 100);
+// if(number % 10 > number /10) Console.WriteLine($"Наибольшая цифра числа {number}: {number % 10}");
+// else Console.WriteLine($"Наибольшая цифра числа {number}: {number / 10}");
+
+
+
+// 12. Удалить вторую цифру трёхзначного числа
+
+// Console.WriteLine("Введите трехзначное число: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+
+// void DeleteSecondDigit(int num)
+// {
+//     int res = 0;
+//     if(num / 1000 == 0 && num / 100 > 0)
+//     {
+//         res = num / 100 * 10 + num % 10;
+//         Console.WriteLine($"Вторая цифра трехзначного числа {num} -> {res}!");
+//     }
+//     else Console.WriteLine($"Число {num} НЕ является трехзначным числом!");
+// }
+
+// DeleteSecondDigit(n);
+
+
+// 13. Выяснить, кратно ли число заданному, если нет, вывести остаток.
+
+// Console.WriteLine("Введите первое число: ");
+// int num1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите второе число: ");
+// int num2 = Convert.ToInt32(Console.ReadLine());
+
+// void Multiply(int n1,int n2)
+// {
+//     int res = 0;
+//     if(n1 % n2 == 0) Console.WriteLine($"Число {n1} является кратным числу {n2}");
+//     else
+//     {
+//         res = n1 % n2;
+//         Console.WriteLine($"Остаток от деления числа {n1} на число {n2} равен {res}!");
+//     }
+// }
+// Multiply(num1,num2);
+
+
+// 14. Найти третью цифру числа или сообщить, что её нет
+
+// Console.WriteLine("Введите число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+
+// int ThirdDigit(int n)
+// {
+//     while(n / 1000 > 0)
+//     {
+//         n = n / 10;
+//     }
+//     return n % 10;
+// }
+// if(number / 100 > 0)
+// {
+//     int res = ThirdDigit(number);
+//     Console.WriteLine($"Третья цифра числа {number} -> {res}!");
+// }
+// else Console.WriteLine("Третьей цифры нет!");
