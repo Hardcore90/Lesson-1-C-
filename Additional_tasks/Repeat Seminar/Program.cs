@@ -130,3 +130,118 @@
 //     Console.WriteLine($"Вторая цифра трехзначного числа -> {res}!");
 // }
 // else Console.WriteLine($"Число {num} НЕ является трехзначным!");
+
+
+// 11. Дано число из отрезка [10, 99]. Показать наибольшую цифру числа
+// int num = new Random().Next(10, 100);
+// if(num / 10 > num % 10)
+// {
+//     Console.WriteLine($"Наибольшая цифра числа {num} -> {num / 10}! ");
+// }
+// else Console.WriteLine($"Наибольшая цифра числа {num} -> {num % 10}! ");
+
+
+// 12. Удалить вторую цифру трёхзначного числа
+// Console.WriteLine("Введите трехзначное число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// bool IsNumberThreeDigit(int n)
+// {
+//     bool res = false;
+//     if(num / 1000 == 0 && num / 100 > 0) res = true;
+//     return res;
+// }
+
+// if(IsNumberThreeDigit(num))
+// {
+//     int firstDigit = num / 100;
+//     int lastDigit = num % 10;
+//     int res = firstDigit * 10 + lastDigit;
+//     Console.WriteLine($"{num} -> {res}!");
+// }
+// else Console.WriteLine($"Число {num} НЕ является трехзначным!");
+
+
+// 13. Выяснить, кратно ли число заданному, если нет, вывести остаток.
+// int num = new Random().Next(1, 100);
+// Console.WriteLine("Введите число: ");
+// int num1 = Convert.ToInt32(Console.ReadLine());
+
+// bool IsMultiplay(int arg1, int arg2)
+// {
+//     bool res = false;
+//     if(arg1 % arg2 == 0) res = true;
+//     return res;
+    
+// }
+
+// if(IsMultiplay(num, num1)) Console.WriteLine($"Число {num} кратно числу {num1} !");
+// else Console.WriteLine($"Число {num} НЕ кратно числу {num1}! Остаток от деления равен {num % num1}! ");
+
+
+
+// 14. Найти третью цифру числа или сообщить, что её нет
+// Console.WriteLine("Введите число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// int ThirdDigit(int number)
+// {
+//     while(number / 1000 > 0)
+//     {
+//         number = number / 10;
+//     }
+//     return number % 10;
+// }
+// if(num / 100 == 0) Console.WriteLine("Нет третьей цифры!");
+// else
+// {
+//     int res = ThirdDigit(num);
+//     Console.WriteLine($"Третья цифра числа {num} -> {res}!");
+// }
+
+
+//                  Почувствуй себя джуном*
+
+// 15. Дано число. Проверить кратно ли оно 7 и 23
+// Console.WriteLine("Введите число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// void IsMultiplay7And23(int number)
+// {
+//     if(number % 7 == 0 && number % 23 == 0)
+//     {
+//         Console.WriteLine($"Число {number} кратно 7 и 23!");
+//     }
+//     else Console.WriteLine($"Число {number} НЕ кратно 7 и 23!");
+// }
+// IsMultiplay7And23(num);
+
+
+// 16. Дано число обозначающее день недели. Выяснить является номер дня недели выходным 
+// Console.WriteLine("Введите номер дня недели: ");
+// int numOfDay = Convert.ToInt32(Console.ReadLine());
+// bool IsWeekend(int num)
+// {
+//     bool res = false;
+//     if(num == 6 || num == 7) res = true;
+//     return res;
+// }
+// if(IsWeekend(numOfDay)) Console.WriteLine("Выходной!");
+// else if(numOfDay == 1) Console.WriteLine("Понедельник!");
+// else if(numOfDay == 2) Console.WriteLine("Вторник!");
+// else if(numOfDay == 3) Console.WriteLine("Среда!");
+// else if(numOfDay == 4) Console.WriteLine("Четверг!");
+// else if(numOfDay == 5) Console.WriteLine("Пятница!");
+// else Console.WriteLine("Такого дня недели не существует!");
+
+
+// 17. По двум заданным числам проверять является ли одно квадратом другого
+// Console.WriteLine("Введите первое число: ");
+// int num1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите второе число: ");
+// int num2 = Convert.ToInt32(Console.ReadLine());
+
+// void IsSquareOfAnotherNumber(int number1, int number2)
+// {
+//     if(number1 == number2 * number2) Console.WriteLine($"Число {number1} является квадратом числа {number2}!");
+//     else if(number2 == number1 * number1) Console.WriteLine($"Число {number2} является квадратом числа {number1}!");
+//     else Console.WriteLine($"Числа не являются квадратом другого!");
+// }
+// IsSquareOfAnotherNumber(num1, num2);
