@@ -245,3 +245,114 @@
 //     else Console.WriteLine($"Числа не являются квадратом другого!");
 // }
 // IsSquareOfAnotherNumber(num1, num2);
+
+
+
+// 18. Проверить истинность утверждения ¬(X ⋁ Y) = ¬X ⋀ ¬Y
+// bool F(bool X, bool Y)
+// {
+//     return (!(X || Y) == ((!X) && (!Y)));
+// }
+// Console.WriteLine(F(false,false));
+
+
+// 19. Определить номер четверти плоскости, в которой находится точка с координатами Х и У, причем X ≠ 0 и Y ≠ 0
+// Console.WriteLine("Введите X: ");
+// int x = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите Y: ");
+// int y = Convert.ToInt32(Console.ReadLine());
+// int PlaneNumber(int x1, int y1)
+// {
+//     int planeNumber = 0;
+//     if(x1 < 0 && y1 < 0) planeNumber = 4;
+//     else if(x1 > 0 && y1 > 0) planeNumber = 2;
+//     else if(x1 > 0 && y1 < 0) planeNumber = 1;
+//     else if(x1 < 0 && y1 > 0) planeNumber = 3;
+//     return planeNumber;
+// }
+// if(x == 0 && y == 0) Console.WriteLine("Координаты точки равны 0!");
+// else 
+// {
+//     int res = PlaneNumber(x, y);
+//     Console.WriteLine($"Номер плоскасти, в который находится точка -> {res}!");
+// }
+
+
+
+// 20. Задать номер четверти, показать диапазоны для возможных координат
+// Console.WriteLine("Введите номер плоскасти: ");
+// int planeNumber = Convert.ToInt32(Console.ReadLine());
+// void Cordinates(int plane)
+// {
+//     if(plane == 1) Console.WriteLine("Диапозон для возможных координат X > 0, Y < 0!");
+//     else if(plane == 2) Console.WriteLine("Диапозон для возможных координат X > 0, Y > 0!");
+//     else if(plane == 3) Console.WriteLine("Диапозон для возможных координат X < 0, Y > 0!");
+//     else if(plane == 4) Console.WriteLine("Диапозон для возможных координат X < 0, Y < 0!");
+//     else Console.WriteLine("Такой плоскасти не существует!");
+// }
+// Cordinates(planeNumber);
+
+
+
+// 21. Программа проверяет пятизначное число на палиндромом.
+// Console.WriteLine("Введите пятизначное число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// bool IsFiveDigitNumber(int num)
+// {
+//     return num / 10000 == 0 || num / 100000 > 0;
+// }
+// bool IsPalidrom(int num)
+// {
+//     bool res = false;
+//     if(num % 10 == num / 10000 & (num / 1000) % 10 == (num / 10) % 10)
+//     {
+//         res = true;
+//     }
+//     return res;
+// }
+// if(IsFiveDigitNumber(number)) Console.WriteLine($"Число {number} НЕ является пятизначным!");
+// else if(IsPalidrom(number)) Console.WriteLine($"Число {number} является палидромом!");
+// else Console.WriteLine($"Число {number} НЕ является палидромом!");
+
+
+
+// 22. Найти расстояние между точками в пространстве 2D/3D
+// Console.WriteLine("Введите координаты точек!");
+// Console.WriteLine("X1:");
+// int x1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Y1:");
+// int y1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Z1:");
+// int z1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("X2:");
+// int x2 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Y2:");
+// int y2 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Z2:");
+// int z2 = Convert.ToInt32(Console.ReadLine());
+
+// double Distance(int argX1, int argY1, int argZ1, int argX2, int argY2, int argZ2)
+// {
+//     double res = Math.Sqrt(Math.Pow((argX2 - argX1), 2) + Math.Pow((argY2 - argY1), 2) + Math.Pow((argZ2 - argZ1), 2));
+//     return res;
+// }
+
+// double res = Math.Round(Distance(x1, y1, z1, x2, y2, z2), 1, MidpointRounding.ToZero);
+// Console.WriteLine($"Расстояние между точками в пространстве 3D: {res}!");
+
+
+
+// 23. Показать таблицу квадратов чисел от 1 до N 
+// Console.WriteLine("Введите N: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// void TableOfSquares(int num)
+// {
+//     int res = 1;
+//     for (int i = 1; i <= num; i++)
+//     {
+//         res = i * i;
+//         Console.WriteLine($"| {i} | {res} |");
+//     }
+//     Console.WriteLine();
+// }
+// TableOfSquares(n);
