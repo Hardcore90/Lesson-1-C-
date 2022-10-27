@@ -171,7 +171,7 @@
 //     bool res = false;
 //     if(arg1 % arg2 == 0) res = true;
 //     return res;
-    
+
 // }
 
 // if(IsMultiplay(num, num1)) Console.WriteLine($"Число {num} кратно числу {num1} !");
@@ -356,3 +356,123 @@
 //     Console.WriteLine();
 // }
 // TableOfSquares(n);
+
+
+
+// 24. Найти кубы чисел от 1 до N
+// Console.WriteLine("Введите N: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// void NumInCube(int num)
+// {
+//     for (int i = 1; i <= num; i++)
+//     {
+//         Console.Write($" {i * i * i} ");
+//     }
+// }
+// Console.Write($"{n} -> ");
+// NumInCube(n);
+
+
+
+//  Найти сумму чисел от 1 до А
+// Console.WriteLine("Введите A: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// int SumOfAllNumbersToA(int num)
+// {
+//     int sum = 0;
+//     for (int i = 1; i <= num; i++)
+//     {
+//         sum = sum + i;
+//     }
+//     return sum;
+// }
+// int res = SumOfAllNumbersToA(a);
+// Console.WriteLine($"Сумма чисел от 1 до {a} -> {res}!");
+
+
+
+// 26. Возведите число А в натуральную степень B используя цикл
+// Console.WriteLine("Введите A: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите B: ");
+// int b = Convert.ToInt32(Console.ReadLine());
+// void ToDegree(int num1, int num2)
+// {
+//     int res = 1;
+//     for (int i = 1; i <= num2; i++)
+//     {
+//         res = res * num1;
+//     }
+//     Console.WriteLine($"{num1} в степени {num2} -> {res}");
+// }
+// ToDegree(a, b);
+
+
+
+// 27. Определить количество цифр в числе
+// Console.WriteLine("Введите число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// int CountDigit(int number)
+// {
+//     int count = 1;
+//     while(number / 10 > 0)
+//     {
+//         number = number / 10;
+//         count++;
+//     }
+//     return count;
+// }
+// int res = CountDigit(num);
+// Console.WriteLine($"Количество цифр в числе {num} -> {res}!");
+
+
+
+// 28. Подсчитать сумму цифр в числе
+// Console.WriteLine("Введите число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// int SumDigitsOfNumber(int number)
+// {
+//     int sum = 0;
+//     while(number > 0)
+//     {
+//         sum = sum + (number % 10);
+//         number = number / 10;
+//     }
+//     return sum;
+// }
+// int res = SumDigitsOfNumber(num);
+// Console.WriteLine($"Сумма цифр числа {num} -> {res}!");
+
+
+
+// Написать программу вычисления произведения чисел от 1 до N
+// Console.WriteLine("Введите N: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int MultiplyFrom1ToN(int num)
+// {
+//     int res = 1;
+//     for (int i = 1; i <= num; i++)
+//     {
+//         res = res * i;
+//     }
+//     return res;
+// }
+// int result = MultiplyFrom1ToN(n);
+// Console.WriteLine($"Произведение чисел от 1 до {n} -> {result}!");
+
+
+
+// 30. Показать кубы чисел, заканчивающихся на четную цифру
+// int number = new Random().Next(1, 100);
+// void CubeOfNumberIfEvenLastDigit(int num)
+// {
+//     if (num % 2 == 0)
+//     {
+//         Console.WriteLine($"{num} -> {num * num * num}");
+//     }
+//     else
+//     {
+//         Console.WriteLine($"{num} -> Последняя цифра не четная!");
+//     }
+// }
+// CubeOfNumberIfEvenLastDigit(number);
