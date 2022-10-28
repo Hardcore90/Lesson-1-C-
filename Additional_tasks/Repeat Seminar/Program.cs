@@ -476,3 +476,390 @@
 //     }
 // }
 // CubeOfNumberIfEvenLastDigit(number);
+
+
+
+// 31. Задать массив из 8 элементов и вывести их на экран 
+// int[] arr = new int[8];
+// int[] FillArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = new Random().Next(1,10);
+//     }
+//     return array;
+// }
+// int[] PrintArray(int[] array)
+// {
+//     Console.Write("[");
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write($" {array[i]} ");
+//     }
+//     Console.Write("]");
+//     return array;
+// }
+// FillArray(arr);
+// PrintArray(arr);
+
+
+
+// 32.  Задать массив из 8 элементов, заполненных нулями и 
+//      единицами вывести их на экран 
+// int[] arr = new int[8];
+// int[] FillArray0And1(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = new Random().Next(0,2);
+//     }
+//     return array;
+// }
+// int[] PrintArray(int[] array)
+// {
+//     Console.Write("[");
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write($" {array[i]} ");
+//     }
+//     Console.Write("]");
+//     return array;
+// }
+// FillArray0And1(arr);
+// PrintArray(arr);
+
+
+
+// 33. Задать массив из 12 элементов, заполненных числами из [0,9].
+// Найти сумму положительных/отрицательных элементов массива
+// int[] arr = new int[12];
+// int[] FillArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = new Random().Next(-9,10);
+//     }
+//     return array;
+// }
+// int[] PrintArray(int[] array)
+// {
+//     Console.Write("[");
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write($" {array[i]} ");
+//     }
+//     Console.Write("]");
+//     return array;
+// }
+// void SumPositiveAndNegativeNumbers(int[] array)
+// {
+//     int sumPositive = 0;
+//     int sumNegative = 0;
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         if(array[i] < 0)
+//         {
+//             sumNegative = sumNegative + array[i];
+//         }
+//         else sumPositive = sumPositive + array[i];
+//     }
+//     Console.WriteLine($"Сумма положительных чисел: {sumPositive}!");
+//     Console.WriteLine($"Сумма отрицательных чисел: {sumNegative}!");
+// }
+
+// FillArray(arr);
+// PrintArray(arr);
+// Console.WriteLine();
+// SumPositiveAndNegativeNumbers(arr);
+
+
+
+// 34. Написать программу замену элементов массива на противоположные
+// int[] arr = new int[12];
+// int[] FillArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = new Random().Next(-9,10);
+//     }
+//     return array;
+// }
+// int[] PrintArray(int[] array)
+// {
+//     Console.Write("[");
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write($" {array[i]} ");
+//     }
+//     Console.Write("]");
+//     return array;
+// }
+// int[] ReverseArrayElements(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = - array[i];
+//     }
+//     return array;
+// }
+
+// FillArray(arr);
+// PrintArray(arr);
+// Console.WriteLine();
+// ReverseArrayElements(arr);
+// PrintArray(arr);
+
+
+
+// 35. Определить, присутствует ли в заданном массиве, некоторое число 
+// Console.WriteLine("Введите искомое число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// int[] arr = new int[12];
+// int[] FillArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = new Random().Next(-9,10);
+//     }
+//     return array;
+// }
+// int[] PrintArray(int[] array)
+// {
+//     Console.Write("[");
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write($" {array[i]} ");
+//     }
+//     Console.Write("]");
+//     return array;
+// }
+// int[] ReverseArrayElements(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = - array[i];
+//     }
+//     return array;
+// }
+// void FindElementInArray(int[] array, int number)
+// {
+//     int flag = 0;
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         if(number == array[i]) 
+//         {
+//             flag = 1;
+//             Console.WriteLine($"Число {number} в массиве присутствует!");
+//         }
+//     }
+//     if(flag == 0) Console.WriteLine($"Число {number} не присутствует в массиве!");
+// }
+
+// FillArray(arr);
+// PrintArray(arr);
+// Console.WriteLine();
+// FindElementInArray(arr, num);
+
+
+
+// 36. Задать массив, заполнить случайными положительными трёхзначными 
+// числами. Показать количество нечетных\четных чисел
+// int[] arr = new int[6];
+// int[] FillArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = new Random().Next(100, 1000);
+//     }
+//     return array;
+// }
+// int[] PrintArray(int[] array)
+// {
+//     Console.Write("[");
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write($" {array[i]} ");
+//     }
+//     Console.Write("]");
+//     return array;
+// }
+// void CountOfEvenAndOddNumbers(int[] array)
+// {
+//     int countEvenNumbers = 0;
+//     int countOddNumbers = 0;
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         if(array[i] % 2 == 0) countEvenNumbers++;
+//         else countOddNumbers++;
+//     }
+//     Console.WriteLine($"Колличество четных чисел в массиве: {countEvenNumbers}!");
+//     Console.WriteLine($"Колличество нечетных чисел в массиве: {countOddNumbers}!");
+// }
+// FillArray(arr);
+// PrintArray(arr);
+// Console.WriteLine();
+// CountOfEvenAndOddNumbers(arr);
+
+
+
+// 37. В одномерном массиве из 123 чисел найти количество 
+// элементов из отрезка [10,99]
+// int[] arr = new int[123];
+// int[] FillArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = new Random().Next(1, 1000);
+//     }
+//     return array;
+// }
+// int[] PrintArray(int[] array)
+// {
+//     Console.Write("[");
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write($" {array[i]} ");
+//     }
+//     Console.Write("]");
+//     return array;
+// }
+// void CountOfNumbersRangeFrom10to99(int[] array)
+// {
+//     int count = 0;
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         if(array[i] >= 10 && array[i] < 100) count++;
+//     }
+//     Console.WriteLine($"Количество элементов в массиве из отрезка [10,99]: {count}!");
+// }
+// FillArray(arr);
+// PrintArray(arr);
+// Console.WriteLine();
+// CountOfNumbersRangeFrom10to99(arr);
+
+
+
+// 38. Найти сумму чисел одномерного массива стоящих на нечетной позиции
+// int[] arr = new int[8];
+// int[] FillArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = new Random().Next(1, 10);
+//     }
+//     return array;
+// }
+// int[] PrintArray(int[] array)
+// {
+//     Console.Write("[");
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write($" {array[i]} ");
+//     }
+//     Console.Write("]");
+//     return array;
+// }
+// int SumElementsInArrayOddIndex(int[] array)
+// {
+//     int sum = 0;
+//     int index = 1;
+//     while(index < array.Length)
+//     {
+//         sum = sum + array[index];
+//         index = index + 2;
+//     }
+//     return sum;
+// }
+// FillArray(arr);
+// PrintArray(arr);
+// Console.WriteLine();
+// Console.WriteLine($"Сумма элементов, стоящих на четных позициях в массиве: {SumElementsInArrayOddIndex(arr)}!");
+
+
+
+// 39. Найти произведение пар чисел в одномерном массиве. 
+// Парой считаем первый и последний элемент, второй и предпоследний и т.д.
+// int[] arr = new int[7];
+// int[] FillArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = new Random().Next(1, 10);
+//     }
+//     return array;
+// }
+// int[] PrintArray(int[] array)
+// {
+//     Console.Write("[");
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write($" {array[i]} ");
+//     }
+//     Console.Write("]");
+//     return array;
+// }
+// int[] MultiplyPairOfNumbers(int[] array)
+// {
+//     int lengthNewArray = array.Length;
+//     if (array.Length % 2 == 0) lengthNewArray = array.Length / 2;
+//     else lengthNewArray = (array.Length / 2) + 1;
+//     int[] newArray = new int[lengthNewArray];
+//     for (int i = 0; i < lengthNewArray; i++)
+//     {
+//         newArray[i] = array[i] * array[array.Length - i - 1];
+//     }
+//     if(array.Length % 2 == 1) newArray[lengthNewArray - 1] = array[array.Length / 2];
+//     return newArray;
+// }
+// FillArray(arr);
+// PrintArray(arr);
+// Console.WriteLine();
+// int[] res = MultiplyPairOfNumbers(arr);
+// PrintArray(res);
+
+
+
+// 40. В Указанном массиве вещественных чисел 
+// найдите разницу между максимальным и минимальным элементом
+// double[] arr = new double[7];
+// double[] FillArray(double[] array, double min, double max)
+// {
+//     Random rnd = new Random();
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = Math.Round((rnd.NextDouble() * (max - min) + min), 2);
+//     }
+//     return array;
+// }
+// double[] PrintArray(double[] array)
+// {
+//     Console.Write("[");
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write($" {array[i]} ");
+//     }
+//     Console.Write("]");
+//     return array;
+// }
+// double DifferenceBetweenMaxAndMinElementsArray(double[] array)
+// {
+//     int i = 0;
+//     double minElement = array[0];
+//     double maxElement = array[0];
+//     while(i < array.Length)
+//     {
+//         if(array[i] > maxElement) maxElement = array[i];
+//         if(array[i] < minElement) minElement = array[i];
+//         i++;
+//     }
+//     return maxElement - minElement;
+// }
+// FillArray(arr, 1, 10);
+// PrintArray(arr);
+// Console.WriteLine();
+// double res = Math.Round((DifferenceBetweenMaxAndMinElementsArray(arr)),2);
+// Console.WriteLine($"Разница между минимальным и максимальным элементом равна: {res}!");
+
+
+
+// 
